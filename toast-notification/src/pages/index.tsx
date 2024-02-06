@@ -54,7 +54,7 @@ export default function Home() {
     
     </div>
     <button onClick={sendNotification} className="bg-green-200 p-2 rounded-md font-bold text-slate-900">Mostrar Notificação</button>
-    <div className={`fixed ${position[notificationPosition]} flex flex-col items-center p-2 gap-2 w-72 overflow-x-hidden`}>
+    <div className={`fixed ${position[notificationPosition]} flex flex-col items-center p-2 gap-2 w-72 overflow-x-hidden overflow-y-auto`}>
       {listNotifications?.map((notification)=>notification)}
     </div>
     </main>
