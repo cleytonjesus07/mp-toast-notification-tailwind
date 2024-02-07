@@ -57,7 +57,7 @@ export default function Home() {
       {listNotifications.length ? <span className="absolute -top-3 -right-1 p-3 w-5 h-5 bg-red-600 text-white rounded-full flex justify-center items-center">{listNotifications.length}</span> : ""}
       Mostrar Notificação
     </button>
-    <div className={`fixed ${position[notificationPosition]} flex flex-col items-center p-2 gap-2 w-72 overflow-x-hidden max-h-svh`}>
+    <div className={`fixed ${position[notificationPosition]} flex  flex-col items-center p-2 gap-2 w-80 overflow-x-hidden max-h-svh`}>
       {listNotifications?.map((notification)=>notification)}
     </div>
     </main>

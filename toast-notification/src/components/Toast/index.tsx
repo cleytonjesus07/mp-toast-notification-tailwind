@@ -23,7 +23,7 @@ export default function Toast({id,image,name,role,clearNotification}:ToastType):
                 <div className="relative w-16 h-16 rounded-full overflow-hidden">
                     <Image alt={`image de ${name}`} src={image} fill className="object-cover object-center"/>
                 </div>
-               <div className="mx-2 flex flex-col justify-center">
+               <div className="mx-2 flex flex-col justify-center line-clamp-1">
                  <h3 className="font-extrabold">{name}</h3>
                  <span className="text-xs font-thin">{role}</span>
                </div>
